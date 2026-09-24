@@ -1,0 +1,78 @@
+name_et,body,max_grant,support_rate,mode,turnover_threshold,status,opens,closes,source_url,checked_on,notes,instrument
+Tehisaru kasutuselevõtmise toetus,EIS,20000,unknown,jooksev,200000,closed,unknown,2026-08-24 16:00,https://eis.ee/teenused/tehisaru-toetus/,2026-09-22,,toetus
+Digitaliseerimise teekaardi toetus,EIS,10000,70,jooksev,200000,closed,unknown,2026-07-24 09:00,https://eis.ee/teenused/digitaliseerimise-teekaardi-toetus/,2026-09-22,,toetus
+Digitaliseerimise teekaardi nõustamis- ja arendustegevuste toetus,EIS,35000,70,jooksev,200000,open,unknown,unknown,https://eis.ee/teenused/digitaliseerimise-teekaardi-arendustegevused-toetus/,2026-09-22,,toetus
+Ettevõtete digipöörde toetus,EIS,400000,70,unknown,200000,closed,2022-08-31,2025-05-19 16:00,https://eis.ee/teenused/digipoorde-toetus/,2026-09-22,,toetus
+RTE - äriprotsesside automatiseerimise ja andmevahetuse toetus,EIS,150000,50,jooksev,50000,closed,unknown,2026-09-04 16:00,https://eis.ee/teenused/rte_automatiseerimise_toetus/,2026-09-22,,toetus
+RTE - tarkvara kasutusele võtmise või liidestamise toetus,EIS,5000,unknown,jooksev,50000,open,unknown,unknown,https://eis.ee/teenused/rte_tarkvara_toetus/,2026-09-22,,toetus
+RTE - andmemajanduse kasutusjuhu väljatöötamise ja rakendamise toetus,EIS,150000,50,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/rte-andmemajanduse-toetus/,2026-09-22,,toetus
+RTE - andmepõhise aruandluse ja andmevahetuse tarkvara arenduse toetus,EIS,150000,50,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/rte_andmepohise_aruandluse_toetus/,2026-09-22,,toetus
+Küberturbe taseme tõstmise toetus (NIS2),EIS,120000,100,jooksev,unknown,open,2026-09-01,unknown,https://eis.ee/teenused/kuberturbe-tostmine-nis2/,2026-09-22,,toetus
+Küberturvalisuse innovatsiooni ja arendustegevuse toetus,EIS,100000,70,jooksev,unknown,open,2026-01-12 09:00,2026-12-15 16:00,https://eis.ee/teenused/kyber-inno-toetus/,2026-09-22,,toetus
+E-veoselehe liidestamise toetus,EIS,15000,90,voor,unknown,closed,2024-09-30 09:00,2025-09-30 16:00,https://eis.ee/teenused/e-veoselehe-liidestamise-toetus/,2026-09-22,,toetus
+Turismisektori tarkvarade liitumis- ja liidestamistoetus,EIS,20000,unknown,jooksev,30000,open,2025-01-07,unknown,https://eis.ee/teenused/turismi-tarkvara-toetus/,2026-09-22,,toetus
+Digimentorlus turismi- ja loomesektorile,EIS,15556,unknown,jooksev,unknown,unknown,unknown,unknown,https://eis.ee/teenused/digimentorlus/,2026-09-22,,toetus
+Ettevõtte investeeringu toetus,EIS,3000000,unknown,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/ettevotte-investeeringu-toetus/,2026-09-22,,toetus
+Suuremahuliste investeeringute toetus,EIS,20000000,15,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/suurinvesteeringute-toetus/,2026-09-22,,toetus
+Tootearenduse toetus,EIS,500000,45,jooksev,200000,open,unknown,unknown,https://eis.ee/teenused/tootearenduse-toetus/,2026-09-22,,toetus
+Arendusosak,EIS,35000,70,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/arendusosak/,2026-09-22,,toetus
+Innovatsiooniosak,EIS,7500,80,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/innovatsiooniosak/,2026-09-22,,toetus
+Ettevõtja teadus- ja arendustöötaja toetus,EIS,unknown,50,voor,unknown,upcoming,2027-02,unknown,https://eis.ee/teenused/teadus-ja-arendustootaja-toetus/,2026-09-22,,toetus
+Rakendusuuringute programm,EIS,2000000,80,voor,unknown,open,2026-08-03 09:00,2026-09-28 16:00,https://eis.ee/teenused/rakendusuuringute-programm/,2026-09-22,,toetus
+Rakendusuuringute programmi väikeprojektide taotlusvoor,EIS,250000,80,unknown,unknown,open,unknown,unknown,https://eis.ee/teenused/rakendusuuringute-programmi-vaikeprojektide-taotlusvoor/,2026-09-22,,toetus
+Teadus- ja arendustegevuse teenuseid pakkuva ettevõtja taristu toetus,EIS,5000000,50,unknown,unknown,closed,unknown,unknown,https://eis.ee/teenused/ta-taristu-toetus/,2026-09-22,,toetus
+Kaitsetööstuse tootearenduse toetus,EIS,3000000,80,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/kaitsetoostuse-tootearendus/,2026-09-22,,toetus
+Rohetoetus: tootmisettevõtja ärimudeli muutmise toetus,EIS,200000,unknown,unknown,unknown,closed,unknown,unknown,https://eis.ee/teenused/rohetoetus/,2026-09-22,,toetus
+Ettevõtte arenguprogramm,EIS,500000,45,jooksev,unknown,open,unknown,unknown,https://eis.ee/teenused/ettevotte-arenguprogramm/,2026-09-22,,toetus
+Väikese ja keskmise suurusega ettevõtja arenguprogramm,EIS,300000,60,jooksev,200000,closed,unknown,2026-06-30 16:00,https://eis.ee/teenused/vke-arenguprogramm/,2026-09-22,,toetus
+Üliõpilaste inseneri valdkonna arendusprojektide toetus,EIS,100000,unknown,voor,unknown,open,2026-09-21 09:00,2026-12-14 16:00,https://eis.ee/teenused/uliopilaste-inseneri-valdkonna-arendusprojektide-toetus/,2026-09-22,,toetus
+Starditoetus,EIS,20000,80,jooksev,unknown,closed,unknown,2026-08-14 09:00,https://eis.ee/teenused/starditoetus/,2026-09-22,,toetus
+Süvatehnoloogia iduettevõtja äriarendusprojektide toetus,EIS,100000,unknown,unknown,unknown,upcoming,unknown,unknown,https://eis.ee/teenused/iduettevotja-toetus/,2026-09-22,,toetus
+Ida-Viru ettevõtluse investeeringute toetus,EIS,unknown,unknown,jooksev,unknown,closed,unknown,2025-12-04 16:00,https://eis.ee/teenused/ida-viru-ettevotluse-investeeringute-toetus/,2026-09-22,,toetus
+Ida-Viru väike- ja keskmise suurusega ettevõtjate investeeringute toetus,EIS,3000000,unknown,jooksev,unknown,closed,unknown,2025-12-04 16:00,https://eis.ee/teenused/ida-viru-vke-toetus/,2026-09-22,,toetus
+Ida-Viru ettevõtjate teadmusmahukate tegevuste toetus,EIS,5000000,unknown,jooksev,unknown,closed,unknown,2024-10-15 16:00,https://eis.ee/teenused/ida-viru-teadmusmahukate-tegevuste-toetus/,2026-09-22,,toetus
+Ida-Viru elektrivõrgu uuendamise toetus,EIS,9000000,unknown,voor,unknown,open,2026-04-21 09:00,2026-11-16 16:00,https://eis.ee/teenused/ida-viru-elektrivorgu-toetus/,2026-09-22,,toetus
+Loomeettevõtjate arenguplaani elluviimise toetus,EIS,100000,70,jooksev,200000,open,unknown,unknown,https://eis.ee/teenused/loomeettevotete-arenguplaani-elluviimise-toetus/,2026-09-22,,toetus
+Loomeettevõtjate ekspordivõimekuse arendamise toetus,EIS,50000,unknown,unknown,50000,closed,unknown,unknown,https://eis.ee/teenused/loomeettevotjate-eksporditoetus/,2026-09-22,,toetus
+Loomeettevõtjatele tugiteenuste pakkumise toetus,EIS,150000,70,voor,unknown,closed,2026-03-16,2026-04-20 16:00,https://eis.ee/teenused/loome-tugiteenuste-toetus/,2026-09-22,,toetus
+Erialaliitude rahvusvahelistumise edendamise toetus,EIS,150000,unknown,voor,unknown,closed,2025-07-09 09:00,2025-09-29 16:00,https://eis.ee/teenused/erialaliitude-rahvusvahelistumine/,2026-09-22,,toetus
+Rahvusvaheliste konverentside toetus,EIS,30000,unknown,voor,unknown,upcoming,2027-01-04 09:00,2027-02-08 16:00,https://eis.ee/teenused/rahvusvaheliste-konverentside-toetus/,2026-09-22,,toetus
+Innovatsioonilaen,EIS,5000000,unknown,unknown,unknown,open,unknown,unknown,https://eis.ee/teenused/innovatsioonilaen/,2026-09-22,,laen
+Tööstuslaen,EIS,2000000,40,unknown,unknown,open,unknown,unknown,https://eis.ee/teenused/toostuslaen/,2026-09-22,,laen
+Ekspordilaen,EIS,15000000,unknown,unknown,unknown,open,unknown,unknown,https://eis.ee/teenused/ekspordilaen/,2026-09-22,,laen
+Kapitalilaen,EIS,7500000,unknown,unknown,unknown,open,unknown,unknown,https://eis.ee/teenused/kapitalilaen/,2026-09-22,,laen
+Laenukäendus,EIS,25000000,unknown,unknown,unknown,open,unknown,unknown,https://eis.ee/teenused/laenukaendus-2/,2026-09-22,,laen
+Stardilaen,EIS,100000,unknown,unknown,unknown,closed,unknown,2023-12-31,https://eis.ee/teenused/stardilaen-2/,2026-09-22,,laen
+Kagu-Eesti ettevõtluse arengutoetuse andmine (2021-2027),RTK,60000,60,jooksev,40000,open,2025-09-01,unknown,https://rtk.ee/kagu-eesti-ettevotluse-arengutoetuse-andmine-2021-2027,2026-09-23,"KNOWN: Osaliselt suletud: Voru maakonna voor on suletud vahendite loppemise tottu. Polva ja Valga maakondades avatud. Voorud avatud alates 01.09.2025, suletakse vahendite loppemisel voi hiljemalt 31.12.2028. Eelarve jaak avaldatakse umbes kord kuus.",toetus
+5G tagamine peamistel transpordikoridoridel,RTK,300000,70,jooksev,unknown,open,2026-05-05,unknown,https://www.rtk.ee/toetused-taotlemine/taotlusvoorud/avatud-ja-suletud-taotlusvoorud,2026-09-22,,toetus
+Väga suure läbilaskevõimega elektroonilise side juurdepääsuvõrgu rajamine (voor Lairiba V-II),RTK,4500,70,voor,500000,open,2026-09-21,2026-11-23 17:00,https://www.rtk.ee/toetused-taotlemine/taotlusvoorud/avatud-ja-suletud-taotlusvoorud,2026-09-22,,toetus
+Maakonna arengustrateegia elluviimise toetusmeede 2024-2027,RTK,unknown,75,jooksev,unknown,open,2024-01-22,2027-12-31,https://www.rtk.ee/toetused-taotlemine/taotlusvoorud/avatud-ja-suletud-taotlusvoorud,2026-09-22,,toetus
+Sektoritevahelise mobiilsuse toetamine,RTK,unknown,85,jooksev,unknown,unknown,2026-02-01,2026-12-31,https://www.rtk.ee/toetused-taotlemine/taotlusvoorud/taotlusvoorude-prognoos,2026-09-22,,toetus
+Ringmajanduse programm,KIK,unknown,unknown,voor,unknown,open,2026-08-25,2026-10-15 17:00,https://kik.ee/et/toetatavad-tegevused/ringmajanduse-programm,2026-09-22,,toetus
+Tööstussümbioosi lahenduste rakendamine,KIK,200000,70,jooksev,unknown,upcoming,2026-10-16,unknown,https://kik.ee/et/toetatavad-tegevused/toostussumbioosi-lahenduste-rakendamine,2026-09-22,,toetus
+"Pakendite ringdisain ja korduspakendite süsteemid, toidukao vähendamine",KIK,2000000,70,jooksev,unknown,open,2025-03-24,unknown,https://kik.ee/et/toetatavad-tegevused/pakendite-ringdisain-ja-korduspakendite-susteemid-toidukao-vahendamine,2026-09-22,,toetus
+Kaugküttesüsteemide uuendamine,KIK,unknown,unknown,voor,unknown,open,2026-08-27,2026-10-07,https://kik.ee/et/toetatavad-tegevused/kaugkutte-katlamajade-uuendamine,2026-09-22,,toetus
+Laevade ümberehitamine keskkonnasõbralikumaks,KIK,5000000,30,unknown,unknown,open,2026-06-05,unknown,https://kik.ee/et/toetatavad-tegevused/laevade-umberehitamine-keskkonnasobralikumaks,2026-09-22,,toetus
+Veemajanduse programm,KIK,400000,50,jooksev,unknown,open,2025-11-05,unknown,https://kik.ee/et/toetatavad-tegevused/veemajanduse-programm,2026-09-22,,toetus
+Metsameede,KIK,unknown,unknown,voor,unknown,open,2026-09-15,2026-10-06,https://kik.ee/et/toetatavad-tegevused/metsameede,2026-09-22,,toetus
+Maaparandussüsteemi korrastamise toetus,KIK,10000,unknown,voor,unknown,closed,2026-08-18,2026-09-03,https://kik.ee/et/toetatavad-tegevused/maaparandussusteemi-korrastamise-toetus,2026-09-23,"KNOWN: Lehel on Staatus: Avatud, kuid tekst ütleb, et voor oli avatud 18.08-03.09.2026. KIK ei ole silti uuendanud. Loetud suletuks teksti, mitte sildi jargi. Toetus kuni 10000 EUR erametsaomaniku kohta.",toetus
+Ettevõtete energia- ja ressursitõhususe suurendamise ning ohutu materjaliringluse edendamise investeeringutoetus,KIK,unknown,65,unknown,unknown,open,2025-11-10,unknown,https://www.rtk.ee/toetused-taotlemine/taotlusvoorud/taotlusvoorude-prognoos,2026-09-22,,toetus
+"Jäätmete väärindamine, ringlussevõtt ja digiaruandlus",KIK,unknown,48,unknown,unknown,open,2025-01-06,unknown,https://www.rtk.ee/toetused-taotlemine/taotlusvoorud/taotlusvoorude-prognoos,2026-09-22,,toetus
+Ringmajanduspõhiste tootmis- ja tarbimismudelite toetus,KIK,unknown,70,unknown,unknown,open,2024-12-16,unknown,https://www.rtk.ee/toetused-taotlemine/taotlusvoorud/taotlusvoorude-prognoos,2026-09-22,,toetus
+Keskkonna- ja kliimaprojekte toetav üleeuroopaline LIFE programm,KIK,unknown,unknown,unknown,unknown,upcoming,unknown,unknown,https://kik.ee/et/toetatavad-tegevused/keskkonna-ja-kliimaprojekte-toetav-uleeuroopaline-life-programm,2026-09-22,,toetus
+EL Innovatsioonifond - innovaatiliste ja kliimasõbralike tehnoloogiate kasutuselevõtt,KIK,unknown,unknown,unknown,unknown,upcoming,unknown,unknown,https://kik.ee/et/toetatavad-tegevused/innovaatiliste-tehnoloogiate-kasutuselevott,2026-09-22,,toetus
+Toiduainetööstuse investeeringutoetus 2026,PRIA,3500000,50,voor,1000000,open,2026-09-16,2026-09-30,https://www.pria.ee/toetused/toiduainetoostuse-investeeringutoetus-2026,2026-09-22,,toetus
+Tulundusühistu põllumajanduslike toodete tootmise investeeringutoetus 2026,PRIA,2500000,50,voor,1000000,open,2026-06-18,2026-09-30,https://www.pria.ee/toetused/tulundusuhistu-pollumajanduslike-toodete-tootmise-investeeringutoetus-2026,2026-09-22,,toetus
+Erametsade kliimamuutustega kohanemise investeeringutoetus 2026,PRIA,unknown,unknown,voor,unknown,open,2026-09-15,2026-10-06,https://www.pria.ee/toetused/erametsade-kliimamuutustega-kohanemise-investeeringutoetus-2026,2026-09-22,,toetus
+Põllumajandusliku tegevusega alustava noore ettevõtja soodustamise investeeringutoetus 2026,PRIA,100000,unknown,voor,10000,upcoming,2026-09-30,2026-10-14,https://www.pria.ee/toetused/pollumajandusliku-tegevusega-alustava-noore-ettevotja-soodustamise-investeeringutoetus-0,2026-09-22,,toetus
+Perioodi 2023-2027 sealihatootja tootlikkuse suurendamise investeeringutoetus,PRIA,6500000,65,voor,750000,upcoming,2026-11-04,2026-11-25,https://www.pria.ee/toetused/perioodi-2023-2027-sealihatootja-tootlikkuse-suurendamise-investeeringutoetus,2026-09-22,,toetus
+Väikeprojektide toetus 2026,PRIA,350000,80,voor,20000,upcoming,2026-11-18,2027-01-27,https://www.pria.ee/toetused/vaikeprojektide-toetus-2026,2026-09-22,,toetus
+Arendusosaku toetus 2026,PRIA,20000,90,jooksev,20000,open,2026-05-13,unknown,https://www.pria.ee/toetused/arendusosaku-toetus-2026,2026-09-22,,toetus
+Teadmussiirde- ja innovatsioonisüsteemi AKIS osaku toetus 2026,PRIA,15000,90,jooksev,4000,upcoming,2026-10-07,unknown,https://www.pria.ee/toetused/teadmussiirde-ja-innovatsioonisusteemi-akis-osaku-toetus-2026,2026-09-22,,toetus
+Maapiirkonna ettevõtjate konkurentsivõime suurendamise investeeringutoetus 2026,PRIA,200000,65,unknown,40000,closed,unknown,2026-06-12,https://www.pria.ee/toetused/maapiirkonna-ettevotjate-konkurentsivoime-suurendamise-investeeringutoetus-2026,2026-09-22,,toetus
+Perioodi 2023-2027 põllumajanduskindlustustoetus,PRIA,unknown,unknown,unknown,unknown,open,2025-12-03,2026-12-31,https://www.pria.ee/toetused,2026-09-22,,toetus
+LEADER - kogukonna juhitud kohaliku arengu projektitoetus,PRIA,unknown,unknown,unknown,unknown,open,2024-02-19,2029-06-30,https://www.pria.ee/toetused,2026-09-22,,toetus
+Kalapüügi- ja vesiviljelusettevõtte ning kalapüügi- ja vesiviljelustoodete töötlemisettevõtte innovatsioonitoetus,PRIA,unknown,unknown,unknown,unknown,open,2026-03-18,unknown,https://www.pria.ee/toetused,2026-09-22,,toetus
+Vesiviljeluse investeeringutoetus (logistika- ja tarneahela parendamine),PRIA,unknown,unknown,unknown,unknown,open,2025-12-03,unknown,https://www.pria.ee/toetused,2026-09-22,,toetus
+Laenud kalanduse- ja vesiviljelusega tegelevale ettevõtjale,PRIA,unknown,unknown,unknown,unknown,open,2016-02-08,unknown,https://www.pria.ee/toetused,2026-09-22,,laen
+Eesti Kultuurkapitali toetus (korraline taotlusvoor),Kultuurkapital,unknown,unknown,voor,unknown,open,2026-08-22,2026-11-20,https://kulka.ee/taotlemine/kkk/taotluste-esitamine,2026-09-22,,toetus

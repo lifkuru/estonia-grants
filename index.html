@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estonian business support register — lifkuru</title>
+<meta name="description" content="Open, source-linked register of Estonian grants and loans for companies (EIS, PRIA, KIK, RTK) with application-window history.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg2:#f6f6f4;--fg:#0e0e0e;--mut:#6b6b68;--line:#e5e5e2;--acc:#1a5cff;--ok:#1f9d55;--warn:#b7791f;--bad:#9b9b97}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f0f;--bg2:#171716;--fg:#f3f3f1;--mut:#a3a39f;--line:#2a2a28;--acc:#6b96ff;--ok:#4cc38a;--warn:#e0a84f;--bad:#77776f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 Onest,system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--fg);text-decoration:none}
+.logo{width:28px;height:28px;border-radius:7px;background:var(--acc);display:grid;place-items:center}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.1;font-weight:800;margin:36px 0 10px;letter-spacing:-.02em}
+.lead{color:var(--mut);max-width:720px;margin:0 0 24px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:24px 0}
+.stat{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px}
+.stat b{display:block;font-size:26px;font-weight:800}.stat span{color:var(--mut);font-size:13px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 12px}
+input,select{font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 12px}
+input{flex:1;min-width:200px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:none;color:var(--mut);font-weight:500;cursor:pointer;user-select:none;background:var(--bg2);position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td a{color:var(--acc);text-decoration:none}td a:hover{text-decoration:underline}
+.pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:99px;border:1px solid currentColor}
+.open{color:var(--ok)}.upcoming{color:var(--acc)}.closed{color:var(--bad)}.unknown{color:var(--mut)}
+.num{text-align:right;white-space:nowrap}.muted{color:var(--mut);font-size:13px}
+footer{margin-top:40px;color:var(--mut);font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:var(--acc)}
+.lang button{font:inherit;background:none;border:1px solid var(--line);color:var(--mut);border-radius:6px;padding:4px 8px;cursor:pointer}
+.lang button.on{color:var(--fg);border-color:var(--fg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="https://lifkuru.com"><span class="logo"><svg width="18" height="18" viewBox="100 55 80 120" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M140 167c-7-1-13-6-13-14 0-7 6-12 12-12 5 0 9 4 9 9 0 4-3 7-7 7-3 0-5-2-5-4C132 130 136 110 140 95"/><path fill="#fff" d="M140 95Q164.7 87.2 172.5 62.5Q154.8 77.3 140 95"/><path fill="#fff" d="M140 95Q119.4 88.6 113 68Q127.9 80.1 140 95"/></svg></span>lifkuru</a>
+  <div class="lang"><button data-l="en" class="on">EN</button> <button data-l="et">ET</button> <button data-l="ru">RU</button></div>
+</header>
+<h1 data-t="h1">Estonian business support register</h1>
+<p class="lead" data-t="lead">Grants and loans for Estonian companies from EIS, PRIA, KIK, RTK and Kultuurkapital — every row linked to its official source, plus how fast application windows actually close.</p>
+<div class="stats" id="stats"></div>
+<div class="controls">
+  <input id="q" type="search" data-tp="search" placeholder="Search by name…">
+  <select id="body"><option value="" data-t="allBodies">All administrators</option></select>
+  <select id="status">
+    <option value="" data-t="allStatus">Any status</option><option value="open" data-t="open">Open</option><option value="upcoming" data-t="upcoming">Upcoming</option><option value="closed" data-t="closed">Closed</option>
+  </select>
+  <select id="inst"><option value="" data-t="allInst">Grants & loans</option><option value="toetus" data-t="grant">Grants</option><option value="laen" data-t="loan">Loans</option></select>
+</div>
+<div class="tbl"><table>
+  <thead><tr>
+    <th data-k="name_et" data-t="cName">Measure</th><th data-k="body" data-t="cBody">Administrator</th>
+    <th data-k="max_grant" class="num" data-t="cMax">Max, €</th><th data-k="support_rate" class="num" data-t="cRate">Rate</th>
+    <th data-k="mode" data-t="cMode">Mode</th><th data-k="status" data-t="cStatus">Status</th><th data-k="closes" data-t="cWin">Window</th>
+  </tr></thead>
+  <tbody id="rows"><tr><td colspan="7" class="muted">Loading…</td></tr></tbody>
+</table></div>
+<p class="muted" data-t="note">Always check the official page before applying. “unknown” means the administrator has not published it — we never guess.</p>
+<footer>
+  <span><span data-t="by">Maintained by</span> <a href="https://lifkuru.com">lifkuru</a> · <a href="https://github.com/lifkuru/estonia-grants">GitHub</a> · <span data-t="lic">Data CC BY 4.0</span></span>
+  <span data-t="help">Need help with an application? info@lifkuru.com</span>
+</footer>
+</div>
+<script>
+const T={
+ en:{h1:"Estonian business support register",lead:"Grants and loans for Estonian companies from EIS, PRIA, KIK, RTK and Kultuurkapital — every row linked to its official source, plus how fast application windows actually close.",search:"Search by name…",allBodies:"All administrators",allStatus:"Any status",open:"Open",upcoming:"Upcoming",closed:"Closed",unknown:"Unknown",allInst:"Grants & loans",grant:"Grants",loan:"Loans",cName:"Measure",cBody:"Administrator",cMax:"Max, €",cRate:"Rate",cMode:"Mode",cStatus:"Status",cWin:"Window",note:"Always check the official page before applying. “unknown” means the administrator has not published it — we never guess.",by:"Maintained by",lic:"Data CC BY 4.0",help:"Need help with an application? info@lifkuru.com",sTotal:"measures tracked",sOpen:"open now",sFast:"of windows closed within 14 days",sChecked:"last checked",jooksev:"rolling",voor:"call",none:"No measures match."},
+ et:{h1:"Eesti ettevõtete toetuste register",lead:"EIS-i, PRIA, KIK-i, RTK ja Kultuurkapitali toetused ja laenud ettevõtetele — iga rida viitab ametlikule allikale, lisaks see, kui kiiresti taotlusvoorud tegelikult sulguvad.",search:"Otsi nime järgi…",allBodies:"Kõik rakendusüksused",allStatus:"Kõik olekud",open:"Avatud",upcoming:"Tulekul",closed:"Suletud",unknown:"Teadmata",allInst:"Toetused ja laenud",grant:"Toetused",loan:"Laenud",cName:"Meede",cBody:"Rakendusüksus",cMax:"Max, €",cRate:"Määr",cMode:"Viis",cStatus:"Olek",cWin:"Voor",note:"Kontrolli enne taotlemist alati ametlikku lehte. „unknown“ tähendab, et rakendusüksus pole seda avaldanud — me ei arva.",by:"Haldab",lic:"Andmed CC BY 4.0",help:"Vajad abi taotlusega? info@lifkuru.com",sTotal:"meedet",sOpen:"praegu avatud",sFast:"voorudest sulgus 14 päevaga",sChecked:"viimati kontrollitud",jooksev:"jooksev",voor:"voor",none:"Sobivaid meetmeid pole."},
+ ru:{h1:"Реестр мер поддержки бизнеса в Эстонии",lead:"Гранты и кредиты для эстонских компаний от EIS, PRIA, KIK, RTK и Kultuurkapital — каждая строка со ссылкой на официальный источник, плюс то, как быстро на самом деле закрываются окна подачи.",search:"Поиск по названию…",allBodies:"Все распорядители",allStatus:"Любой статус",open:"Открыто",upcoming:"Скоро",closed:"Закрыто",unknown:"Неизвестно",allInst:"Гранты и кредиты",grant:"Гранты",loan:"Кредиты",cName:"Мера",cBody:"Распорядитель",cMax:"Макс., €",cRate:"Доля",cMode:"Режим",cStatus:"Статус",cWin:"Окно",note:"Перед подачей всегда проверяйте официальную страницу. «unknown» значит, что распорядитель это не опубликовал — мы не угадываем.",by:"Ведёт",lic:"Данные CC BY 4.0",help:"Нужна помощь с заявкой? info@lifkuru.com",sTotal:"мер в реестре",sOpen:"открыто сейчас",sFast:"окон закрылись за 14 дней",sChecked:"последняя проверка",jooksev:"живая очередь",voor:"раунд",none:"Ничего не найдено."}
+};
+let L=(navigator.language||'en').slice(0,2);if(!T[L])L='en';
+try{L=localStorage.getItem('eg_lang')||L}catch(e){}
+function parse(t){const r=[];let row=[],f='',q=false;for(let i=0;i<t.length;i++){const c=t[i];if(q){if(c=='"'){if(t[i+1]=='"'){f+='"';i++}else q=false}else f+=c}else if(c=='"')q=true;else if(c==','){row.push(f);f=''}else if(c=='\n'){row.push(f);r.push(row);row=[];f=''}else if(c!='\r')f+=c}if(f||row.length){row.push(f);r.push(row)}const h=r.shift();return r.filter(x=>x.length>1).map(x=>Object.fromEntries(h.map((k,i)=>[k,x[i]||''])))}
+let M=[],W=[],sortK='status',sortD=1;const order={open:0,upcoming:1,unknown:2,closed:3};
+const fmt=v=>v&&v!=='unknown'&&!isNaN(v)?Number(v).toLocaleString('et-EE'):'<span class="muted">unknown</span>';
+function tr(){const t=T[L];document.documentElement.lang=L;document.querySelectorAll('[data-t]').forEach(e=>{if(t[e.dataset.t])e.textContent=t[e.dataset.t]});document.querySelectorAll('[data-tp]').forEach(e=>e.placeholder=t[e.dataset.tp]);document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===L));stats();render()}
+function stats(){if(!M.length)return;const t=T[L];const known=W.filter(w=>w.days_open&&w.days_open!=='unknown');const fast=known.filter(w=>Number(w.days_open)<=14).length;const chk=M.map(m=>m.checked_on).sort().pop();
+document.getElementById('stats').innerHTML=[[M.length,t.sTotal],[M.filter(m=>m.status==='open').length,t.sOpen],[known.length?fast+' / '+known.length:'—',t.sFast],[chk,t.sChecked]].map(([b,s])=>`<div class="stat"><b>${b}</b><span>${s}</span></div>`).join('')}
+function render(){const t=T[L];const q=document.getElementById('q').value.toLowerCase(),b=document.getElementById('body').value,s=document.getElementById('status').value,ins=document.getElementById('inst').value;
+let r=M.filter(m=>(!q||m.name_et.toLowerCase().includes(q))&&(!b||m.body===b)&&(!s||m.status===s)&&(!ins||m.instrument===ins));
+r.sort((a,c)=>{let x=a[sortK],y=c[sortK];if(sortK==='status'){x=order[x]??9;y=order[y]??9}else if(['max_grant','support_rate'].includes(sortK)){x=isNaN(x)?-1:+x;y=isNaN(y)?-1:+y}return (x>y?1:x<y?-1:0)*sortD});
+document.getElementById('rows').innerHTML=r.length?r.map(m=>`<tr><td><a href="${m.source_url}" target="_blank" rel="noopener">${m.name_et}</a>${m.instrument==='laen'?' <span class="muted">· '+t.loan.toLowerCase()+'</span>':''}</td><td>${m.body}</td><td class="num">${fmt(m.max_grant)}</td><td class="num">${m.support_rate&&m.support_rate!=='unknown'?m.support_rate+' %':'<span class="muted">—</span>'}</td><td>${t[m.mode]||'<span class="muted">—</span>'}</td><td><span class="pill ${m.status}">${t[m.status]||m.status}</span></td><td class="muted">${[m.opens,m.closes].filter(v=>v&&v!=='unknown').join(' → ')||'—'}</td></tr>`).join(''):`<tr><td colspan="7" class="muted">${t.none}</td></tr>`}
+document.querySelectorAll('th[data-k]').forEach(h=>h.onclick=()=>{const k=h.dataset.k;sortD=sortK===k?-sortD:1;sortK=k;render()});
+['q','body','status','inst'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{L=b.dataset.l;try{localStorage.setItem('eg_lang',L)}catch(e){}tr()});
+Promise.all([fetch('data/measures.csv').then(r=>r.text()),fetch('data/windows.csv').then(r=>r.text())]).then(([a,b])=>{M=parse(a);W=parse(b);
+[...new Set(M.map(m=>m.body))].sort().forEach(x=>{const o=document.createElement('option');o.value=o.textContent=x;document.getElementById('body').appendChild(o)});tr()});
+</script>
+</body>
+</html>
